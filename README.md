@@ -52,8 +52,8 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
-![Alt text](./op-img/cmp- op.png>)
+ ![Alt text](op-img/cmp-op.png)
+
 comm file1 file2
  ## OUTPUT
 
