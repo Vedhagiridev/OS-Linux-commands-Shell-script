@@ -42,17 +42,17 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![Alt text](op-img/cat1.png)
+![Alt text](./op-img/cat1.png)
 
 
 cat < file2
 ## OUTPUT
-![Alt text](op-img/cat1.png)
+![Alt text](./op-img/cat1.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- ![Alt text](op-img/cmp-op.png)
+ ![Alt text](./op-img/cmp-op.png)
 
 comm file1 file2
  ## OUTPUT
@@ -83,18 +83,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![Alt text](./op-img/cut1.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![Alt text](./op-img/cut2.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![Alt text](./op-img/cut3.png)
 
 cat < newfile 
 ```
@@ -108,40 +108,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![Alt text](./op-img/grep1.png)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![Alt text](./op-img/grep2.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![Alt text](./op-img/grep3.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![Alt text](./op-img/cgrep1.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![Alt text](./op-img/cgrep2.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![Alt text](./op-img/grep4.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![Alt text](./op-img/grep5.png)
 
 cat < newfile 
 ```
@@ -164,59 +164,68 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![Alt text](./op-img/egrep1.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![Alt text](./op-img/egrep2.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep2.png)
 
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep2.png)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep2.png)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep2.png)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep2.png)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![Alt text](./op-img/egrep3.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep3.png)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![Alt text](./op-img/egrep3.png)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![Alt text](./op-img/egrep3.png)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Alt text](./op-img/egrep3.png)
 
 
 cat > file23
@@ -235,76 +244,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed1.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![Alt text](./op-img/sed1.png)
+
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![Alt text](./op-img/sed1.png)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed2.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed2.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed2.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed3.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed3.png)
 
 
 seq 10 
 ## OUTPUT
-
+![Alt text](./op-img/sed4.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![Alt text](./op-img/sed4.png)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![Alt text](./op-img/sed4.png)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![Alt text](./op-img/sed5.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![Alt text](./op-img/sed5.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![Alt text](./op-img/sed5.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![Alt text](./op-img/sed5.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
