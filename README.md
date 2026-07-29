@@ -53,13 +53,14 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
  
+![Alt text](./op-img/cmp- op.png>)
 comm file1 file2
  ## OUTPUT
 
  
 diff file1 file2
 ## OUTPUT
-
+![Alt text](./op-img/difffile.png)
 
 #Filters
 
