@@ -783,6 +783,8 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
+ ##OUTPUT
+ ![Alt text](./op-img/shell14.png)
  
  
 cat forin1.sh 
@@ -797,6 +799,8 @@ done
  
 $ chmod 755 forin1.sh
  
+ ## OUTPUT
+ ![Alt text](./op-img/shell15.png)
  
 cat forin2.sh 
 ```bash
@@ -809,7 +813,8 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
+
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -821,7 +826,9 @@ done
 ```
 $ chmod 755 forin2.sh
  
-$ ./forin2.sh 
+$ ./forin2.sh
+ ## OUTPUT
+ ![Alt text](./op-img/shell16.png) 
  
 cat forin3.sh 
 ```bash
@@ -833,7 +840,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ##OUTPUT
+ ![Alt text](./op-img/shell17.png)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -845,7 +854,9 @@ done
 ```
 $ chmod 755 forin1.sh
 
-## OUTPUT
+ ## OUTPUT
+ ![Alt text](./op-img/shell15.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -867,7 +878,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![Alt text](./op-img/shell18.png)
 
 cat forctype.sh 
 ```bash
@@ -881,6 +892,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Alt text](./op-img/shell19.png)
 
 cat forctype1.sh 
 ```bash
@@ -894,6 +906,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Alt text](./op-img/shell20.png)
 
 cat fornested1.sh 
 ```bash
@@ -912,7 +925,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](./op-img/shel21.png)
  
 cat forbreak.sh 
 ```bash
@@ -928,12 +941,13 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
+ ## OUTPUT
+![Alt text](./op-img/shell22.png)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -954,7 +968,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](./op-img/shell23.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -968,7 +982,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](./op-img/shell24.png)
 
  cat exread1.sh
 ```bash
@@ -979,11 +993,11 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
-## OUTPUT
-
-
-
 $ ./exread1.sh 
+
+## OUTPUT
+![Alt text](./op-img/shell25.png)
+
  
 cat funcex.sh
 ```bash
@@ -1000,11 +1014,13 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
-## OUTPUT
- ./funcex.sh 
-
+ ./funcex.sh
+ ## OUTPUT 
+![Alt text](./op-img/shell26.png)
  
  ./funcex.sh 1 2
+ ## OUTPUT
+![Alt text](./op-img/shell26.png)
 
  
 cat argshift.sh
@@ -1016,10 +1032,10 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ## OUTPUT
+ ![Alt text](./op-img/shell27.png)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1034,9 +1050,10 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ## OUTPUT
+![Alt text](./op-img/shell29.png)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1047,9 +1064,9 @@ while (( "$#" )); do
 done
 set +x
 ```
-## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ## OUTPUT
+ ![Alt text](./op-img/shell30.png)
  
 cat > nc.awk
 ```bash
@@ -1080,7 +1097,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](./op-img/shell31.png)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1107,7 +1125,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![Alt text](./op-img/shell32.png)
 
 # RESULT:
 The Commands are executed successfully.
