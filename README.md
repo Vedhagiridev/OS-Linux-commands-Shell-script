@@ -322,7 +322,8 @@ sed -n '2,4{s/^/$/;p}' file23
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUt
+![Alt text](./op-img/sed6.png)
 
 #Sorting File content
 cat > file21
@@ -335,7 +336,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![Alt text](./op-img/sed6.png)
 
 cat > file22
 ```
@@ -348,14 +349,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![Alt text](./op-img/uniq.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![Alt text](./op-img/cat.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -371,18 +372,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![Alt text](./op-img/cat3.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![Alt text](./op-img/cat3.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![Alt text](./op-img/cat3.png)
 
 mkdir backupdir
  
@@ -392,19 +393,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![Alt text](./op-img/tar2.png)
 
 tar -xvf backup.tar
 ## OUTPUT
-
+![Alt text](./op-img/tar3.png)
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Alt text](./op-img/gzip1.png)
 gunzip backup.tar.gz
 ## OUTPUT
-
+![Alt text](./op-img/gzip1.png)
  
 # Shell Script
 ```
@@ -414,7 +415,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![Alt text](./op-img/shell1.png)
  
 cat << stop > herecheck.txt
 ```
@@ -426,7 +427,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![Alt text](./op-img/shell2.png)
 
 cat < scriptest.sh 
 ```bash
@@ -464,16 +465,16 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![Alt text](./op-img/shell3.png)
  
 ls file1
 ## OUTPUT
-
+![Alt text](./op-img/ls1.png)
 echo $?
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
- 
+ ![Alt text](./op-img/ls1.png)
 echo $?
 ## OUTPUT 
  
@@ -481,7 +482,7 @@ abcd
  
 echo $?
  ## OUTPUT
-
+![Alt text](./op-img/ls1.png)
 
  
 # mis-using string comparisons
@@ -513,14 +514,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![Alt text](./op-img/shell4.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![Alt text](./op-img/shell5.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -547,7 +548,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![Alt text](./op-img/shell6.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -593,7 +594,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![Alt text](./op-img/shell7.png)
 
 
 # using numeric test comparisons
@@ -637,7 +638,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![Alt text](./op-img/shell8.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -686,6 +687,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![Alt text](./op-img/shell9.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -714,7 +716,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](./op-img/shell10.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -730,7 +732,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![Alt text](./op-img/shell.11.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -749,7 +751,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+![Alt text](./op-img/shell12.png)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -764,7 +768,8 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+## OUTPUT
+![Alt text](./op-img/shell13.png)
  
 cat untiltest.sh 
 ```bash
